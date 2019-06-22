@@ -79,16 +79,17 @@ female&ensp;&ensp;&ensp;&ensp;	college&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 &ensp;&ensp;&ensp;&ensp;   
 &ensp;&ensp;&ensp;&ensp;   
 # 二. SPSS操作过程与结果  
-* 操作：Analyze -- General Linear Model -- Univariate  
-* 结果：  
+* **操作**：Analyze -- General Linear Model -- Univariate  
+* **结果**：  
 ![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/SPSS1.PNG)  
 ![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/SPSS2.PNG)  
-* 解释：  
+* **解释**：  
 &ensp;&ensp;&ensp;&ensp;可见，gender和education因素对因变量都有显著影响，但两者的交互作用较弱。“观测幂”就是检验的效能，可见，对education因素的主效应的检验的效能较高。对gender的检验的效能低于0.75。  
 &ensp;&ensp;&ensp;&ensp;   
 &ensp;&ensp;&ensp;&ensp;   
 # 三. SAS操作过程与结果  
 ## 1. 录入原始数据  
+* **代码**：   
 DATA temp;  
 input gender $ education $ political_interest;  
 datalines;  
@@ -165,6 +166,19 @@ female	college	5.36\
 female	college	5.81\
 female	college	5.31\
 &ensp;&ensp;&ensp;&ensp;   
+## 2. 两因素方差分析 GLM  
+* **一般线性模型**：  
+Yijk = υ + αi + βj + (αβ)ij + εijk  
+其中，Yijk是每个样本的因变量值，υ是总平均效应，αi是因素A的第i水平的效应，βj是因素B的第j水平的效应，(αβ)ij是αi和βj之间的交互作用的效应，εijk是随机误差分量。  
+* **方差分解模型**：  
+SST = SSA + SSB + SSAB + SSE  
+* **代码**： 
+PROC glm data = temp;
+class gender education ;
+model political_interest = gender education gender\*education ;
+run;  
+* **结果**：  
+
 
 
 

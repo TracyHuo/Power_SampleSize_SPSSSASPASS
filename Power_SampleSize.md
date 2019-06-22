@@ -227,7 +227,22 @@ run;quit;
 &ensp;&ensp;&ensp;&ensp;首先计算了每个水平组合的样本均值和标准差。然后，使用GLMPOWER计算检验效能。stddev = 0.2730 0.7055 取的是现有数据的每个水平组合的标准差的最小和最大值，所以计算出的各检验的效能处在一个范围里。与SPSS的结果基本一致。  
 &ensp;&ensp;&ensp;&ensp;    
 ## 4. 样本量估算   
-
+**代码**：  
+PROC glmpower data = temp2;  
+class gender education;  
+model mean = gender education gender\*education;  
+power  
+stddev = 0.2730 to 0.7055 by 0.05  
+ntotal = .  
+power = 0.80;  
+run;quit;  
+**结果**：  
+![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/SAS6.PNG)  
+![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/SAS7.PNG)  
+![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/SAS8.PNG)  
+&ensp;&ensp;&ensp;&ensp;   
+**解释**：  
+&ensp;&ensp;&ensp;&ensp;temp2数据集里是每个水平组合的样本均值。此处，stddev参考了现有数据的标准差，最小0.2730，最大0.7055，并进行了略微的范围扩大，共指定了9个标准差。power=0.8指定检验效能为0.8，以此估算样本量。得到了检验水平为0.05，取不同stddev所需要的样本量。在检验水平等因素固定时，样本量随stddev的增加而增加。对education进行检验时，只需较少的样本量即可达到0.8的检验效能。而对gender进行检验时，要达到0.8的检验效能需要更大的样本量。  
 
 
 

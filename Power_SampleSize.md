@@ -10,7 +10,8 @@
 * [四. PASS操作过程与结果](#四--PASS操作过程与结果)  
     * [1. 检验效能计算](#1--检验效能计算)  
     * [2. 给对gender因素的检验估算样本量](#2--给对gender因素的检验估算样本量)  
-    * [3. 给对education因素的检验估算样本量](#3--给对education因素的检验估算样本量)  
+    * [3. 给对education因素的检验估算样本量](#3--给对education因素的检验估算样本量)   
+* [五. Reference](#五--R)  
     
 &ensp;&ensp;&ensp;&ensp;  
 
@@ -321,6 +322,11 @@ std dev of subjects: 0.411487 （即用根号MSE估算σ）
 * **解释**：  
 &ensp;&ensp;&ensp;&ensp;此处指定的受试者间变异，即 std dev of subjects 指定为 0.411487，也就是用方差分析得到的MSE开方估计受试者间变异。在此值下估算得到的样本量是24。而参考SAS的结果，接近的是stddev取值0.423的情况，估算的样本量是30，可见，与PASS结果24很接近。  
 &ensp;&ensp;&ensp;&ensp;   
+
+# 五  Reference  
+* 《深入解析SAS 数据处理、分析优化与商业应用》 夏坤庄著2015年
+* https://ncss-wpengine.netdna-ssl.com/wp-content/themes/ncss/pdf/Procedures/PASS/Factorial_Analysis_of_Variance.pdf  
+   PASS 文档 --  Chapter 560. Factorial Analysis of Variance
 
 
 

@@ -224,7 +224,7 @@ run;quit;
 ![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/SAS5.PNG)  
 &ensp;&ensp;&ensp;&ensp;    
 **解释**：  
-&ensp;&ensp;&ensp;&ensp;首先计算了每个水平组合的样本均值和标准差。然后，使用GLMPOWER计算检验效能。stddev = 0.2730 0.7055 取的是现有数据的每个水平组合的标准差的最小和最大值，所以计算出的各检验的效能处在一个范围里。与SPSS的结果基本一致。  
+&ensp;&ensp;&ensp;&ensp;首先计算了每个水平组合的样本均值和标准差。然后，使用GLMPOWER计算检验效能。stddev指的是受试者间的变异，stddev = 0.2730 0.7055 取的是现有数据的每个水平组合的标准差的最小和最大值，以此作为受试者间变异的评估，所以计算出的各检验的效能处在一个范围里。与SPSS的结果基本一致。  
 &ensp;&ensp;&ensp;&ensp;    
 ## 4. 样本量估算   
 * **代码**：  
@@ -242,7 +242,75 @@ run;quit;
 ![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/SAS8.PNG)  
 &ensp;&ensp;&ensp;&ensp;   
 * **解释**：  
-&ensp;&ensp;&ensp;&ensp;temp2数据集里是每个水平组合的样本均值。此处，stddev参考了现有数据的标准差，最小0.2730，最大0.7055，并进行了略微的范围扩大，共指定了9个标准差。power=0.8指定检验效能为0.8，以此估算样本量。得到了检验水平为0.05，取不同stddev所需要的样本量。在检验水平等因素固定时，样本量随stddev的增加而增加。对education进行检验时，只需较少的样本量即可达到0.8的检验效能。而对gender进行检验时，要达到0.8的检验效能需要更大的样本量。  
+&ensp;&ensp;&ensp;&ensp;temp2数据集里是每个水平组合的样本均值。此处，stddev指的是受试者间的变异，我参考了现有数据的每个水平组合的样本的标准差，最小0.2730，最大0.7055，共指定了此范围内的9个标准差。power=0.8指定检验效能为0.8，以此估算样本量。  
+&ensp;&ensp;&ensp;&ensp;得到了检验水平为0.05，取不同stddev所需要的样本量。在检验水平等因素固定时，样本量随stddev的增加而增加。对education进行检验时，只需较少的样本量即可达到0.8的检验效能。而对gender进行检验时，要达到0.8的检验效能需要更大的样本量。  
+&ensp;&ensp;&ensp;&ensp;  
+
+# 三. PASS操作过程与结果    
+## 1. 检验效能计算  
+* **操作**：  
+Procedures — Means — Multi - Factor Designs(ANOVA) — Factorial Anova  
+设置：  
+solve for: power  
+alpha for all terms : 0.05  
+Design and effects:  number of factors:2   
+main effects:  
+A levels:2, means: as a std dev: 即Sm(A)= 0.104167.  
+B levels:3, means: as a std dev: 即Sm(B)= 0.288516.  
+interactions:  
+A\*B effects: std dev of effects : 即 Sm(AB)= 0.035569.  
+standard deviation:  
+std dev of subjects: 0.411487 （此值是受试者间的变异，可以用方差分析F检验得到的模型里误差项MSE的开方，即用根号MSE估算σ）  
+sample size:size per group: 12  （因为每个水平组合共12个样本）  
+&ensp;&ensp;&ensp;&ensp;  
+* **结果**：  
+![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/PASS1.PNG)  
+![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/PASS2.PNG)   
+* **解释**：  
+&ensp;&ensp;&ensp;&ensp; 此检验效能计算结果与SPSS的结果完全一致。  
+&ensp;&ensp;&ensp;&ensp;   
+## 2. 给对gender因素的检验估算样本量   
+* **操作**：  
+设置：  
+solve for: size   
+based on term: A  （先给 对A的检验 估算样本量，A即gender因素）  
+power and alpha:  
+minimum power:0.80  
+alpha for all terms : 0.05  
+Design and effects:number of factors:2  
+main effects:  
+A levels:2, means: as a std dev: 即Sm(A)= 0.104167.  
+B levels:3, means: as a std dev: 即Sm(B)= 0.288516.  
+interactions:  
+A\*B effects: std dev of effects : 即 Sm(AB)= 0.035569.  
+standard deviation:  
+std dev of subjects: 0.411487 （即用根号MSE估算σ）  
+&ensp;&ensp;&ensp;&ensp;  
+* **结果**：  
+![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/PASS3.PNG)  
+![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/PASS4.PNG)   
+* **解释**：  
+&ensp;&ensp;&ensp;&ensp;此处指定的受试者间变异，即 std dev of subjects 指定为 0.411487，也就是用方差分析得到的MSE开方估计受试者间变异。在此值下估算得到的样本量是126。而参考SAS的结果，接近的是stddev取值0.423的情况，估算的样本量是132，可见，与PASS结果126很接近。  
+&ensp;&ensp;&ensp;&ensp;   
+
+## 3. 给对education因素的检验估算样本量   
+* **操作**：  
+设置：  
+和给对gender的检验估算样本量的设置相似，只有一点不同，此处based on term设置为B，B即education因素。    
+&ensp;&ensp;&ensp;&ensp;  
+* **结果**：  
+![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/PASS5.PNG)  
+![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/PASS6.PNG)   
+* **解释**：  
+&ensp;&ensp;&ensp;&ensp;此处指定的受试者间变异，即 std dev of subjects 指定为 0.411487，也就是用方差分析得到的MSE开方估计受试者间变异。在此值下估算得到的样本量是24。而参考SAS的结果，接近的是stddev取值0.423的情况，估算的样本量是30，可见，与PASS结果24很接近。  
+&ensp;&ensp;&ensp;&ensp;   
+
+
+
+
+
+
+
 
 
 

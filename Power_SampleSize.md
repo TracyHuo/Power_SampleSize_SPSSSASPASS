@@ -8,4 +8,90 @@
 # 二. SPSS操作过程与结果  
 * 操作：Analyze -- General Linear Model -- Univariate  
 * 结果：  
+![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/SPSS1.PNG)  
+![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/SPSS2.PNG)  
+* 解释：  
+&ensp;&ensp;&ensp;&ensp;可见，gender和education因素对因变量都有显著影响，但两者的交互作用较弱。“观测幂”就是检验的效能，可见，对education因素的主效应的检验的效能较高。对gender的检验的效能低于0.75。  
+&ensp;&ensp;&ensp;&ensp;   
+&ensp;&ensp;&ensp;&ensp;   
+# 三. SAS操作过程与结果  
+## 1. 录入原始数据  
+DATA temp;  
+input gender $ education $ political_interest;  
+datalines;  
+male	middleschool	5.24
+male	middleschool	5.08
+male	middleschool	4.68
+male	middleschool	5.36
+male	middleschool	4.96
+male	middleschool	4.83
+male	middleschool	4.5
+male	middleschool	5.33
+male	middleschool	4.98
+male	middleschool	4.85
+male	middleschool	4.84
+male	middleschool	4.49
+male	highschool	4.61
+male	highschool	4.16
+male	highschool	4.23
+male	highschool	4.86
+male	highschool	4.96
+male	highschool	4.58
+male	highschool	5.86
+male	highschool	6.26
+male	highschool	5.77
+male	highschool	5.97
+male	highschool	5.35
+male	highschool	5.44
+male	college	5.54
+male	college	5.78
+male	college	5.93
+male	college	5.47
+male	college	6.37
+male	college	5.64
+male	college	5.27
+male	college	5.78
+male	college	5.72
+male	college	5.35
+male	college	5.97
+male	college	5.6
+female	middleschool	4.63
+female	middleschool	5.24
+female	middleschool	5.01
+female	middleschool	4.81
+female	middleschool	5.05
+female	middleschool	5.26
+female	middleschool	4.73
+female	middleschool	4.31
+female	middleschool	4.63
+female	middleschool	5.04
+female	middleschool	4.65
+female	middleschool	4.34
+female	highschool	4.61
+female	highschool	4.82
+female	highschool	4.37
+female	highschool	4.6
+female	highschool	4.88
+female	highschool	4.68
+female	highschool	5.43
+female	highschool	5.51
+female	highschool	4.57
+female	highschool	5.24
+female	highschool	5.42
+female	highschool	5.39
+female	college	5.61
+female	college	4.88
+female	college	5.3
+female	college	5.44
+female	college	5.47
+female	college	5.77
+female	college	5
+female	college	5.52
+female	college	5.42
+female	college	5.36
+female	college	5.81
+female	college	5.31
+
+
+
 

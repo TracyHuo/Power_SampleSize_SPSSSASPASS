@@ -1,6 +1,79 @@
 # 一. 原始数据
 &ensp;&ensp;&ensp;&ensp;想研究性别和受教育程度两个因素对政治兴趣的影响，收集到了一份数据，内含72位受试者的性别、受教育程度、政治兴趣信息。性别gender包含female, male两个水平；受教育程度education包含middleschool, highschool, college 三个水平；因变量政治兴趣political_interest是连续数值变量。共6个水平组合，每个水平组合12个样本，为平衡数据。  
 &ensp;&ensp;&ensp;&ensp;原始数据：  
+gender    education    political_interest
+male	    middleschool	5.24\
+male	    middleschool	5.08\
+male	    middleschool	4.68\
+male	    middleschool	5.36\
+male	    middleschool	4.96\
+male	    middleschool	4.83\
+male	    middleschool	4.5\
+male	    middleschool	5.33\
+male	    middleschool	4.98\
+male	    middleschool	4.85\
+male	    middleschool	4.84\
+male	    middleschool	4.49\
+male	    highschool	4.61\
+male	highschool	4.16\
+male	highschool	4.23\
+male	highschool	4.86\
+male	highschool	4.96\
+male	highschool	4.58\
+male	highschool	5.86\
+male	highschool	6.26\
+male	highschool	5.77\
+male	highschool	5.97\
+male	highschool	5.35\
+male	highschool	5.44\
+male	college	5.54\
+male	college	5.78\
+male	college	5.93\
+male	college	5.47\
+male	college	6.37\
+male	college	5.64\
+male	college	5.27\
+male	college	5.78\
+male	college	5.72\
+male	college	5.35\
+male	college	5.97\
+male	college	5.6\
+female	middleschool	4.63\
+female	middleschool	5.24\
+female	middleschool	5.01\
+female	middleschool	4.81\
+female	middleschool	5.05\
+female	middleschool	5.26\
+female	middleschool	4.73\
+female	middleschool	4.31\
+female	middleschool	4.63\
+female	middleschool	5.04\
+female	middleschool	4.65\
+female	middleschool	4.34\
+female	highschool	4.61\
+female	highschool	4.82\
+female	highschool	4.37\
+female	highschool	4.6\
+female	highschool	4.88\
+female	highschool	4.68\
+female	highschool	5.43\
+female	highschool	5.51\
+female	highschool	4.57\
+female	highschool	5.24\
+female	highschool	5.42\
+female	highschool	5.39\
+female	college	5.61\
+female	college	4.88\
+female	college	5.3\
+female	college	5.44\
+female	college	5.47\
+female	college	5.77\
+female	college	5\
+female	college	5.52\
+female	college	5.42\
+female	college	5.36\
+female	college	5.81\
+female	college	5.31\
 
 &ensp;&ensp;&ensp;&ensp;此为两因素析因设计。析因设计可以用来同时考察各个因素的主效应 和 因素间的各级交互效应的大小。以此两因素析因设计为例，可以考察：gender因素对因变量的影响；education因素对因变量的影响；gender，education的交互作用对因变量的影响。  
 &ensp;&ensp;&ensp;&ensp;   
@@ -91,6 +164,8 @@ female	college	5.42\
 female	college	5.36\
 female	college	5.81\
 female	college	5.31\
+&ensp;&ensp;&ensp;&ensp;   
+
 
 
 

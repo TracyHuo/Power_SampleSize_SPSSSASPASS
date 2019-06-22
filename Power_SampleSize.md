@@ -165,6 +165,7 @@ female	college	5.42\
 female	college	5.36\
 female	college	5.81\
 female	college	5.31\
+；  
 &ensp;&ensp;&ensp;&ensp;   
 ## 2. 两因素方差分析 GLM  
 * **一般线性模型**：  

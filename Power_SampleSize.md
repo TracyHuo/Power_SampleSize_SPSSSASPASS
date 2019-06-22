@@ -174,7 +174,7 @@ Yijk = υ + αi + βj + (αβ)ij + εijk
 * **方差分解模型**：  
 SST = SSA + SSB + SSAB + SSE    
 &ensp;&ensp;&ensp;&ensp;     
-* **代码**： 
+* **代码**：  
 PROC glm data = temp;  
 class gender education ;  
 model political_interest = gender education gender\*education ;  
@@ -182,11 +182,50 @@ run;
 &ensp;&ensp;&ensp;&ensp;     
 * **结果**：  
 ![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/SAS1.PNG)  
+&ensp;&ensp;&ensp;&ensp;     
 ![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/SAS2.PNG)  
+&ensp;&ensp;&ensp;&ensp;     
 ![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/SAS3.PNG)  
 * **解释**：   
 &ensp;&ensp;&ensp;&ensp;方差分析表里包含了对各因素主效应及交互效应的检验结果，与SPSS结果一致。（I类平方和与模型中变量的进入顺序有关，III类平方和与此顺序无关）  
 &ensp;&ensp;&ensp;&ensp;交互作用图明显看到三条线基本平行，代表两因素的交互作用较弱。  
+## 3. 检验效能计算  
+* **计算每个水平组合的均值和标准差**：  
+**代码**：    
+PROC means mean std;  
+var political_interest ;  
+class gender education;  
+run;  
+**结果**：  
+![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/SAS4.PNG)  
+&ensp;&ensp;&ensp;&ensp;    
+* **录入均值数据**：  
+DATA temp2;  
+do gender = "female","male";  
+do education = "college","highschool","middleschool";  
+input mean @@ ;  
+output;  
+end; end;  
+cards;  
+5.4075 4.9600 4.8083 5.7017 5.1708 4.9283  
+run;  
+* **计算检验效能**：  
+**代码**：  
+PROC glmpower data = temp2;  
+class gender education;  
+model mean = gender education gender\*education;  
+power  
+stddev = 0.2730 0.7055  
+ntotal = 72  
+power =.;  
+run;quit;   
+**结果**：  
+
+
+
+
+
+
 
 
 

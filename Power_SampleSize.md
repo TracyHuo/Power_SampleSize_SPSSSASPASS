@@ -181,6 +181,13 @@ model political_interest = gender education gender\*education ;
 run;   
 &ensp;&ensp;&ensp;&ensp;     
 * **结果**：  
+![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/SAS1.PNG)  
+![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/SAS2.PNG)  
+![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/SAS3.PNG)  
+* **解释**：   
+&ensp;&ensp;&ensp;&ensp;方差分析表里包含了对各因素主效应及交互效应的检验结果，与SPSS结果一致。（I类平方和与模型中变量的进入顺序有关，III类平方和与此顺序无关）  
+&ensp;&ensp;&ensp;&ensp;交互作用图明显看到三条线基本平行，代表两因素的交互作用较弱。  
+
 
 
 

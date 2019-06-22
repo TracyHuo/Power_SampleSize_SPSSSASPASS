@@ -14,30 +14,30 @@ male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;middleschool&ensp;&ensp;4.98\
 male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;middleschool&ensp;&ensp;4.85\
 male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;middleschool&ensp;&ensp;4.84\
 male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;middleschool&ensp;&ensp;4.49\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool&ensp;&ensp;&ensp;4.61\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool	4.16\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool	4.23\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool	4.86\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool	4.96\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool	4.58\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool	5.86\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool	6.26\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool	5.77\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool	5.97\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool	5.35\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool	5.44\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	5.54\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	5.78\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	5.93\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	5.47\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	6.37\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	5.64\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	5.27\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	5.78\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	5.72\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	5.35\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	5.97\
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	5.6\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool&ensp;&ensp;&ensp;&ensp;4.61\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool&ensp;&ensp;&ensp;&ensp;4.16\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool&ensp;&ensp;&ensp;&ensp;4.23\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool&ensp;&ensp;&ensp;&ensp;4.86\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool&ensp;&ensp;&ensp;&ensp;4.96\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool&ensp;&ensp;&ensp;&ensp;4.58\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool&ensp;&ensp;&ensp;&ensp;5.86\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool&ensp;&ensp;&ensp;&ensp;6.26\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool&ensp;&ensp;&ensp;&ensp;5.77\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool&ensp;&ensp;&ensp;&ensp;5.97\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool&ensp;&ensp;&ensp;&ensp;5.35\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool&ensp;&ensp;&ensp;&ensp;5.44\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;5.54\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;5.78\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;	5.93\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;	5.47\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;	6.37\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;	5.64\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;	5.27\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;	5.78\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;	5.72\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;	5.35\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;	5.97\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;	5.6\
 female	middleschool	4.63\
 female	middleschool	5.24\
 female	middleschool	5.01\

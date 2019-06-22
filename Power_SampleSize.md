@@ -1,21 +1,21 @@
 # 目录
 
-* [一. 原始数据](#一-.-原始数据)  
-* [二. SPSS操作过程与结果](#二.-SPSS操作过程与结果)   
-* [三. SAS操作过程与结果](#三.-SAS操作过程与结果)   
-    * [1. 录入原始数据](#1.-录入原始数据)   
-    * [2. 两因素方差分析 GLM](#2.-两因素方差分析-GLM)  
-    * [3. 检验效能计算](#3.-检验效能计算)  
-    * [4. 样本量估算](#4.-样本量估算)  
-* [四. PASS操作过程与结果](#四.-PASS操作过程与结果)  
-    * [1. 检验效能计算](#1.-检验效能计算)  
-    * [2. 给对gender因素的检验估算样本量](#2.-给对gender因素的检验估算样本量)  
-    * [3. 给对education因素的检验估算样本量](#3.-给对education因素的检验估算样本量)  
+* [一. 原始数据](#一--原始数据)  
+* [二. SPSS操作过程与结果](#二--SPSS操作过程与结果)   
+* [三. SAS操作过程与结果](#三--SAS操作过程与结果)   
+    * [1. 录入原始数据](#1--录入原始数据)   
+    * [2. 两因素方差分析 GLM](#2--两因素方差分析-GLM)  
+    * [3. 检验效能计算](#3--检验效能计算)  
+    * [4. 样本量估算](#4--样本量估算)  
+* [四. PASS操作过程与结果](#四--PASS操作过程与结果)  
+    * [1. 检验效能计算](#1--检验效能计算)  
+    * [2. 给对gender因素的检验估算样本量](#2--给对gender因素的检验估算样本量)  
+    * [3. 给对education因素的检验估算样本量](#3--给对education因素的检验估算样本量)  
     
 &ensp;&ensp;&ensp;&ensp;  
 
 
-# 一 . 原始数据  
+# 一  原始数据  
 &ensp;&ensp;&ensp;&ensp;想研究性别和受教育程度两个因素对政治兴趣的影响，收集到了一份数据，内含72位受试者的性别、受教育程度、政治兴趣信息。性别gender包含female, male两个水平；受教育程度education包含middleschool, highschool, college 三个水平；因变量政治兴趣political_interest是连续数值变量。共6个水平组合，每个水平组合12个样本，为平衡数据。  
 &ensp;&ensp;&ensp;&ensp;原始数据：  
 **gender**&ensp;&ensp;&ensp;&ensp;**education**&ensp;&ensp;&ensp;&ensp;**political_interest**  
@@ -95,7 +95,7 @@ female&ensp;&ensp;&ensp;&ensp;	college&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 &ensp;&ensp;&ensp;&ensp;此为两因素析因设计。析因设计可以用来同时考察各个因素的主效应 和 因素间的各级交互效应的大小。以此两因素析因设计为例，可以考察：gender因素对因变量的影响；education因素对因变量的影响；gender，education的交互作用对因变量的影响。  
 &ensp;&ensp;&ensp;&ensp;   
 &ensp;&ensp;&ensp;&ensp;   
-# 二. SPSS操作过程与结果  
+# 二  SPSS操作过程与结果  
 * **操作**：Analyze -- General Linear Model -- Univariate  
 * **结果**：  
 ![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/SPSS1.PNG)  
@@ -104,8 +104,8 @@ female&ensp;&ensp;&ensp;&ensp;	college&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 &ensp;&ensp;&ensp;&ensp;可见，gender和education因素对因变量都有显著影响，但两者的交互作用较弱。“观测幂”就是检验的效能，可见，对education因素的主效应的检验的效能较高。对gender的检验的效能低于0.75。  
 &ensp;&ensp;&ensp;&ensp;   
 &ensp;&ensp;&ensp;&ensp;   
-# 三. SAS操作过程与结果  
-## 1. 录入原始数据  
+# 三  SAS操作过程与结果  
+## 1  录入原始数据  
 * **代码**：   
 DATA temp;  
 input gender $ education $ political_interest;  
@@ -184,7 +184,7 @@ female	college	5.81\
 female	college	5.31\
 ；  
 &ensp;&ensp;&ensp;&ensp;   
-## 2. 两因素方差分析 GLM  
+## 2  两因素方差分析 GLM  
 * **一般线性模型**：  
 Yijk = υ + αi + βj + (αβ)ij + εijk  
 &ensp;&ensp;&ensp;&ensp;其中，Yijk是每个样本的因变量值，υ是总平均效应，αi是因素A的第i水平的效应，βj是因素B的第j水平的效应，(αβ)ij是αi和βj之间的交互作用的效应，εijk是随机误差分量。  
@@ -207,7 +207,7 @@ run;
 * **解释**：   
 &ensp;&ensp;&ensp;&ensp;方差分析表里包含了对各因素主效应及交互效应的检验结果，与SPSS结果一致。（I类平方和与模型中变量的进入顺序有关，III类平方和与此顺序无关）  
 &ensp;&ensp;&ensp;&ensp;交互作用图明显看到三条线基本平行，代表两因素的交互作用较弱。  
-## 3. 检验效能计算  
+## 3  检验效能计算  
 * **计算每个水平组合的均值和标准差**：  
 **代码**：    
 PROC means mean std;  
@@ -243,7 +243,7 @@ run;quit;
 **解释**：  
 &ensp;&ensp;&ensp;&ensp;首先计算了每个水平组合的样本均值和标准差。然后，使用GLMPOWER计算检验效能。stddev指的是受试者间的变异，stddev = 0.2730 0.7055 取的是现有数据的每个水平组合的标准差的最小和最大值，以此作为受试者间变异的评估，所以计算出的各检验的效能处在一个范围里。与SPSS的结果基本一致。  
 &ensp;&ensp;&ensp;&ensp;    
-## 4. 样本量估算   
+## 4  样本量估算   
 * **代码**：  
 PROC glmpower data = temp2;  
 class gender education;  
@@ -263,8 +263,8 @@ run;quit;
 &ensp;&ensp;&ensp;&ensp;得到了检验水平为0.05，取不同stddev所需要的样本量。在检验水平等因素固定时，样本量随stddev的增加而增加。对education进行检验时，只需较少的样本量即可达到0.8的检验效能。而对gender进行检验时，要达到0.8的检验效能需要更大的样本量。  
 &ensp;&ensp;&ensp;&ensp;  
 
-# 三. PASS操作过程与结果    
-## 1. 检验效能计算  
+# 三  PASS操作过程与结果    
+## 1  检验效能计算  
 * **操作**：  
 Procedures — Means — Multi - Factor Designs(ANOVA) — Factorial Anova  
 设置：  
@@ -286,7 +286,7 @@ sample size:size per group: 12  （因为每个水平组合共12个样本）
 * **解释**：  
 &ensp;&ensp;&ensp;&ensp; 此检验效能计算结果与SPSS的结果完全一致。  
 &ensp;&ensp;&ensp;&ensp;   
-## 2. 给对gender因素的检验估算样本量   
+## 2  给对gender因素的检验估算样本量   
 * **操作**：  
 设置：  
 solve for: size   
@@ -310,7 +310,7 @@ std dev of subjects: 0.411487 （即用根号MSE估算σ）
 &ensp;&ensp;&ensp;&ensp;此处指定的受试者间变异，即 std dev of subjects 指定为 0.411487，也就是用方差分析得到的MSE开方估计受试者间变异。在此值下估算得到的样本量是126。而参考SAS的结果，接近的是stddev取值0.423的情况，估算的样本量是132，可见，与PASS结果126很接近。  
 &ensp;&ensp;&ensp;&ensp;   
 
-## 3. 给对education因素的检验估算样本量   
+## 3  给对education因素的检验估算样本量   
 * **操作**：  
 设置：  
 和给对gender的检验估算样本量的设置相似，只有一点不同，此处based on term设置为B，B即education因素。    

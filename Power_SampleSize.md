@@ -169,15 +169,19 @@ female	college	5.31\
 ## 2. 两因素方差分析 GLM  
 * **一般线性模型**：  
 Yijk = υ + αi + βj + (αβ)ij + εijk  
-其中，Yijk是每个样本的因变量值，υ是总平均效应，αi是因素A的第i水平的效应，βj是因素B的第j水平的效应，(αβ)ij是αi和βj之间的交互作用的效应，εijk是随机误差分量。  
+&ensp;&ensp;&ensp;&ensp;其中，Yijk是每个样本的因变量值，υ是总平均效应，αi是因素A的第i水平的效应，βj是因素B的第j水平的效应，(αβ)ij是αi和βj之间的交互作用的效应，εijk是随机误差分量。  
+&ensp;&ensp;&ensp;&ensp;   
 * **方差分解模型**：  
-SST = SSA + SSB + SSAB + SSE  
+SST = SSA + SSB + SSAB + SSE    
+&ensp;&ensp;&ensp;&ensp;     
 * **代码**： 
-PROC glm data = temp;
-class gender education ;
-model political_interest = gender education gender\*education ;
-run;  
+PROC glm data = temp;  
+class gender education ;  
+model political_interest = gender education gender\*education ;  
+run;   
+&ensp;&ensp;&ensp;&ensp;     
 * **结果**：  
+
 
 
 

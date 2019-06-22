@@ -38,10 +38,10 @@ male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college&ensp;&ensp;&ensp;&ensp;&ensp;&en
 male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;	5.35\
 male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;	5.97\
 male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;	5.6\
-female&ensp;&ensp;&ensp;&ensp;	middleschool&ensp;&ensp;	4.63\
-female	middleschool&ensp;&ensp;	5.24\
-female	middleschool&ensp;&ensp;	5.01\
-female	middleschool&ensp;&ensp;	4.81\
+female&ensp;&ensp;&ensp;	middleschool&ensp;&ensp;	4.63\
+female&ensp;&ensp;&ensp;&ensp;	middleschool&ensp;&ensp;	5.24\
+female&ensp;&ensp;&ensp;&ensp;	middleschool&ensp;&ensp;	5.01\
+female&ensp;&ensp;&ensp;&ensp;	middleschool&ensp;&ensp;	4.81\
 female	middleschool&ensp;&ensp;	5.05\
 female	middleschool&ensp;&ensp;	5.26\
 female	middleschool&ensp;&ensp;	4.73\

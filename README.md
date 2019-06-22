@@ -8,7 +8,7 @@
 * **使用SPSS、SAS、PASS计算了各检验的效能power**。  
 * **使用SAS、PASS在给定检验power的前提下估算样本量**。  
 &ensp;&ensp;    
-详细计算过程见 Power_SampleSize.md 文档。
+详细计算过程见 Power_SampleSize.md 文档。  
 =======================================
 
 

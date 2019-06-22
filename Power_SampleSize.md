@@ -74,7 +74,7 @@ female&ensp;&ensp;&ensp;&ensp;	college&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 female&ensp;&ensp;&ensp;&ensp;	college&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;	5.36\
 female&ensp;&ensp;&ensp;&ensp;	college&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;	5.81\
 female&ensp;&ensp;&ensp;&ensp;	college&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;	5.31\
-
+&ensp;&ensp;&ensp;&ensp;  
 &ensp;&ensp;&ensp;&ensp;此为两因素析因设计。析因设计可以用来同时考察各个因素的主效应 和 因素间的各级交互效应的大小。以此两因素析因设计为例，可以考察：gender因素对因变量的影响；education因素对因变量的影响；gender，education的交互作用对因变量的影响。  
 &ensp;&ensp;&ensp;&ensp;   
 &ensp;&ensp;&ensp;&ensp;   

@@ -220,7 +220,12 @@ ntotal = 72
 power =.;  
 run;quit;   
 **结果**：  
-
+![image](https://github.com/TracyHuo/Power_SampleSize_SPSSSASPASS/blob/master/Image/SAS5.PNG)  
+&ensp;&ensp;&ensp;&ensp;    
+**解释**：  
+&ensp;&ensp;&ensp;&ensp;首先计算了每个水平组合的样本均值和标准差。然后，使用GLMPOWER计算检验效能。stddev = 0.2730 0.7055 取的是现有数据的每个水平组合的标准差的最小和最大值，所以计算出的各检验的效能处在一个范围里。与SPSS的结果基本一致。  
+&ensp;&ensp;&ensp;&ensp;    
+## 4. 样本量估算  
 
 
 

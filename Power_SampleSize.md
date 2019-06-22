@@ -263,7 +263,7 @@ run;quit;
 &ensp;&ensp;&ensp;&ensp;得到了检验水平为0.05，取不同stddev所需要的样本量。在检验水平等因素固定时，样本量随stddev的增加而增加。对education进行检验时，只需较少的样本量即可达到0.8的检验效能。而对gender进行检验时，要达到0.8的检验效能需要更大的样本量。  
 &ensp;&ensp;&ensp;&ensp;  
 
-# 三  PASS操作过程与结果    
+# 四  PASS操作过程与结果    
 ## 1  检验效能计算  
 * **操作**：  
 Procedures — Means — Multi - Factor Designs(ANOVA) — Factorial Anova  

@@ -2,42 +2,42 @@
 &ensp;&ensp;&ensp;&ensp;想研究性别和受教育程度两个因素对政治兴趣的影响，收集到了一份数据，内含72位受试者的性别、受教育程度、政治兴趣信息。性别gender包含female, male两个水平；受教育程度education包含middleschool, highschool, college 三个水平；因变量政治兴趣political_interest是连续数值变量。共6个水平组合，每个水平组合12个样本，为平衡数据。  
 &ensp;&ensp;&ensp;&ensp;原始数据：  
 **gender**&ensp;&ensp;&ensp;&ensp;**education**&ensp;&ensp;&ensp;&ensp;**political_interest**  
-male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;middleschool&ensp;5.24\
-male	    middleschool	5.08\
-male	    middleschool	4.68\
-male	    middleschool	5.36\
-male	    middleschool	4.96\
-male	    middleschool	4.83\
-male	    middleschool	4.5\
-male	    middleschool	5.33\
-male	    middleschool	4.98\
-male	    middleschool	4.85\
-male	    middleschool	4.84\
-male	    middleschool	4.49\
-male	    highschool	4.61\
-male	highschool	4.16\
-male	highschool	4.23\
-male	highschool	4.86\
-male	highschool	4.96\
-male	highschool	4.58\
-male	highschool	5.86\
-male	highschool	6.26\
-male	highschool	5.77\
-male	highschool	5.97\
-male	highschool	5.35\
-male	highschool	5.44\
-male	college	5.54\
-male	college	5.78\
-male	college	5.93\
-male	college	5.47\
-male	college	6.37\
-male	college	5.64\
-male	college	5.27\
-male	college	5.78\
-male	college	5.72\
-male	college	5.35\
-male	college	5.97\
-male	college	5.6\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;middleschool&ensp;&ensp;5.24\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;middleschool&ensp;&ensp;5.08\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;middleschool&ensp;&ensp;4.68\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;middleschool&ensp;&ensp;5.36\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;middleschool&ensp;&ensp;4.96\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;middleschool&ensp;&ensp;4.83\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;middleschool&ensp;&ensp;4.5\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;middleschool&ensp;&ensp;5.33\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;middleschool&ensp;&ensp;4.98\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;middleschool&ensp;&ensp;4.85\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;middleschool&ensp;&ensp;4.84\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;middleschool&ensp;&ensp;4.49\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool&ensp;&ensp;&ensp;4.61\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool	4.16\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool	4.23\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool	4.86\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool	4.96\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool	4.58\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool	5.86\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool	6.26\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool	5.77\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool	5.97\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool	5.35\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;highschool	5.44\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	5.54\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	5.78\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	5.93\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	5.47\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	6.37\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	5.64\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	5.27\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	5.78\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	5.72\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	5.35\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	5.97\
+male&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;college	5.6\
 female	middleschool	4.63\
 female	middleschool	5.24\
 female	middleschool	5.01\

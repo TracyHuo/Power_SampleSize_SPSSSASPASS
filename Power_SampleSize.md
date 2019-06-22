@@ -11,7 +11,7 @@
     * [1. 检验效能计算](#1--检验效能计算)  
     * [2. 给对gender因素的检验估算样本量](#2--给对gender因素的检验估算样本量)  
     * [3. 给对education因素的检验估算样本量](#3--给对education因素的检验估算样本量)   
-* [五. Reference](#五--R)  
+* [五. Reference](#五--Reference)  
     
 &ensp;&ensp;&ensp;&ensp;  
 

@@ -1,7 +1,7 @@
 # 一. 原始数据
 &ensp;&ensp;&ensp;&ensp;想研究性别和受教育程度两个因素对政治兴趣的影响，收集到了一份数据，内含72位受试者的性别、受教育程度、政治兴趣信息。性别gender包含female, male两个水平；受教育程度education包含middleschool, highschool, college 三个水平；因变量政治兴趣political_interest是连续数值变量。共6个水平组合，每个水平组合12个样本，为平衡数据。  
 &ensp;&ensp;&ensp;&ensp;原始数据：  
-gender    education    political_interest
+gender&ensp;&ensp;&ensp;&ensp;education&ensp;&ensp;&ensp;&ensp;political_interest  
 male	    middleschool	5.24\
 male	    middleschool	5.08\
 male	    middleschool	4.68\
